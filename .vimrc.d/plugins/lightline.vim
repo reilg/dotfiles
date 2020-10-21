@@ -4,7 +4,7 @@ let g:lightline = {
 			\   'right': [ [ 'linter_checking', 'linter_errors', 'linter_warnings', 'linter_ok', 'lineinfo' ], ['percent'], [ 'fileformat', 'fileencoding', 'filetype' ] ]
 			\ },
 			\ 'component_function': {
-			\   'fugitive': 'MyFugitive',
+			\   'fugitive': 'FugitiveHead',
 			\   'filename': 'MyFilename',
 			\   'fileformat': 'MyFileformat',
 			\   'filetype': 'MyFiletype',
