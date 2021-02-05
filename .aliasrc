@@ -84,3 +84,10 @@ if [ $(command -v xsel) ]
 then
 	alias clip='xsel -b'
 fi
+
+if [ $(command -v scrcpy) ]
+then
+	alias rphone='nohup scrcpy --window-height 900 -S &'
+	alias rwphone='nohup scrcpy -b2M --window-height 900 -S &'
+	alias rs8='nohup scrcpy -m 1080 --window-height 750 -S &'
+fi

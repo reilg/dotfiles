@@ -76,10 +76,16 @@ then
 	export PATH="$PATH:$HOME/.npm-global/bin"
 fi
 
+if [ -d "${HOME}/.yarn" ]
+then
+	export PATH="$PATH:$HOME/.yarn/bin"
+fi
+
 if [ -d "${HOME}/Projects/go" ]
 then
 	export GOPATH="$HOME/Projects/go"
 	export GOROOT="$HOME/.local/share/golang"
+	export PATH="$GOPATH/bin:$PATH"
 fi
 
 if [ -d "${HOME}/n" ]
